@@ -18,7 +18,7 @@ for (i = 1; i <= 20; i++) {  //determines how long the for loop is to run
 ////////////////////////////////
 // Get Even
 ////////////////////////////////
-
+// Write a for loop that will log only the even numbers in 0 through 200.
 
 
 
