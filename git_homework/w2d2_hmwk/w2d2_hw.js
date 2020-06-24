@@ -7,9 +7,9 @@
 
 //Easy Going: Write a for loop that will log the numbers 1 through 20.
 
-let i = 0  //start point of the for loop
+//start point of the for loop
 
-for (i = 1; i <= 20; i++) {  //determines how long the for loop is to run
+for (let i = 1; i <= 20; i++) {  // Interates from 1 to 20, increasing by 1 each interation
                             
     console.log(i);  //logs 1-20 in terminal
 }
@@ -20,7 +20,14 @@ for (i = 1; i <= 20; i++) {  //determines how long the for loop is to run
 ////////////////////////////////
 // Write a for loop that will log only the even numbers in 0 through 200.
 
+console.log('--')   //separates results of for loops in terminal
 
+for(let i = 0; i <= 200; i++)   // Interates from 0 to 200 increasing by value of 1
+{                               // If condition: uses modulator (%) to see if remainder - if not 
+   if (i % 2 === 0){            // will log only the even numbers
+    console.log(i);
+   }
+}
 
 
 ////////////////////////////////
