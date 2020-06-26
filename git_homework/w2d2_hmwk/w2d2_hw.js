@@ -34,14 +34,38 @@ for(let i = 0; i <= 200; i++)   // Interates from 0 to 200 increasing by value o
 // Fizz Buzz
 ////////////////////////////////
 
+/*
 
+Write a javascript application that logs all numbers from 1 - 100.
+If a number is divisible by 3 log "Fizz" instead of the number.
+If a number is divisible by 5 log "Buzz" instead of the number.
+If a number is divisible by 3 and 5 log "FizzBuzz" instead of the number.
 
+*/
+
+console.log('--')   //separates results of for loops in terminal
+
+for (let i = 1; i <= 100; i++) {  // Interates the code to increase number by one until it reaches 100
+    let answer = "";            // allows the answer to be whatever is in the string
+    
+    if( i % 3 == 0 ) {          // If a number is divisible by 3, add "Fizz" to the string instead of the number.
+        answer += "Fizz"; }
+    
+    if( i % 5 == 0 ) {         // If a number is divisible by 5, add "Buzz" to the string instead of the number.
+        answer += "Buzz"; }
+
+    if(answer == "") {         // If there is no string answer, it will be logged as a number that is
+        answer = i; }          // nondivisible by 3 or 5
+
+    console.log(answer);      // Logs the answer of the if interation in terminal 
+}
 
 
 ////////////////////////////////
 // Wild Wild Life
 ////////////////////////////////
 
+console.log('--')   //separates results of for loops in terminal
 
 
 
@@ -50,6 +74,7 @@ for(let i = 0; i <= 200; i++)   // Interates from 0 to 200 increasing by value o
 // Yell at the Ninja Turtles
 ////////////////////////////////
 
+console.log('--')   //separates results of for loops in terminal
 
 
 
@@ -58,6 +83,7 @@ for(let i = 0; i <= 200; i++)   // Interates from 0 to 200 increasing by value o
 // Methods, Revisited
 ////////////////////////////////
 
+console.log('--')   //separates results of for loops in terminal
 
 
 
@@ -66,6 +92,7 @@ for(let i = 0; i <= 200; i++)   // Interates from 0 to 200 increasing by value o
 // Where is Waldo
 ////////////////////////////////
 
+console.log('--')   //separates results of for loops in terminal
 
 
 
@@ -73,6 +100,7 @@ for(let i = 0; i <= 200; i++)   // Interates from 0 to 200 increasing by value o
 //  Excited Kitten
 ////////////////////////////////
 
+console.log('--')   //separates results of for loops in terminal
 
 
 
@@ -80,6 +108,8 @@ for(let i = 0; i <= 200; i++)   // Interates from 0 to 200 increasing by value o
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
+
+console.log('--')   //separates results of for loops in terminal
 
 
 
