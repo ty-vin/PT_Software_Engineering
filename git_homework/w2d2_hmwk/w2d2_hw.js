@@ -9,7 +9,6 @@
 
 //Easy Going: Write a for loop that will log the numbers 1 through 20.
 
-//start point of the for loop
 
 for (let i = 1; i <= 20; i++) {  // Interates from 1 to 20, increasing by 1 each interation
                             
@@ -87,11 +86,10 @@ for (let i = 1; i <= 100; i++) {  // Interates the code to increase number by on
 // 4. Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array 
 //    and replace it with "Gameboy".
 
-console.log('--')   //separates results of each activity in terminal
-
 // const arrayName = [index0, index1, index2, index3, ...]
 // const array = [name, species ,age, hometown] 
 
+console.log('--')   //separates results of each activity in terminal
 
 // Plantee just had her birthday; change Plantee's array to reflect her being a year older.
 
@@ -103,16 +101,16 @@ console.log(plantee); // results: [ 'Plantee', 'plant', 5001, 'Mordor' ]
 // Change Wolfy's hometown from "Yukon Territory" to "Gotham City".
 
 const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
-wolfy.pop("Yukon Territory");  // remove index3 (hometown) "Yukon Territory"
+wolfy.pop("Yukon Territory");   // remove index3 (hometown) "Yukon Territory"
 wolfy.push("Gotham City");      // replace index3 with "Gothem City"
 console.log(wolfy);             // results: [ 'Wolfy', 'wolf', 16, 'Gotham City' ]
 
 
 // Give D'Art a second hometown by adding "Hawkins"
 
-const dart = ["D'Art" , "Demogorgan Dog", 2, "Upside Down"]
+const dart = ["D'Art", "Demogorgan Dog", 2, "Upside Down"]
 dart[3] += " Hawkins";  // adds the word "Hawkins" to index3 (hometown), the last index
-console.log(dart);  // Results: [ "D'Art", 'Demogorgan Dog', 2, 'Upside Down Hawkins' ]
+console.log(dart);      // Results: [ "D'Art", 'Demogorgan Dog', 2, 'Upside Down Hawkins' ]
 
 
 // Porgee decides that Wolfy can't be named "Wolfy" anymore. Remove "Wolfy" from the wolfy array and 
@@ -129,8 +127,21 @@ console.log(wolfy);
 // Yell at the Ninja Turtles
 ////////////////////////////////
 
-// console.log('--')   //separates results of each activity in terminal
+// Create an array with the members of the ninja turtles (Donatello, Leonardo, Raphael, Michaelangelo)
 
+// Use a " for of " loop (not a typo - try it out! Try a for of loop) to call .toUpperCase() on each of them 
+// and print out the result.
+
+ console.log('--')   //separates results of each activity in terminal
+
+const ninjaTurtles = ["Donatello", "Leonardo", "Raphael", "Michaelangelo"];
+// Let 'ninja' represent the name of a ninjaTurtle in the array
+for (let ninja of ninjaTurtles){        // A for loop that lets each ninja name of the ninjaTurtle array 
+    console.log(ninja.toUpperCase());   // be converted to upper case letters with .toUpperCase method
+}                                       // Results: DONATELLO
+                                        //          LEONARDO
+                                        //          RAPHAEL
+                                        //          MICHAELANGELO
 
 
 
@@ -148,6 +159,8 @@ console.log(wolfy);
 ////////////////////////////////
 
 // console.log('--')   //separates results of each activity in terminal
+
+
 
 
 
