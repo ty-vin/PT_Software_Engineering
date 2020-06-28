@@ -122,6 +122,7 @@ console.log(wolfy);
 
 */
 
+/*
 
 ////////////////////////////////
 // Yell at the Ninja Turtles
@@ -143,22 +144,125 @@ for (let ninja of ninjaTurtles){        // A for loop that lets each ninja name 
                                         //          RAPHAEL
                                         //          MICHAELANGELO
 
-
+*/
 
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
 
+
 // console.log('--')   //separates results of each activity in terminal
 
+const favMovies = ['Jaws', 'The Fellowship of the Ring', 'Howl\'s Moving Castle', 'Django Unchained', 
+'Cloud Atlas', 'The Usual Suspects', 'Toy Story', 'Conan the Barbarian', 'Titanic', 'Harry Potter', 
+'Fried Green Tomatoes', 'Volver', 'Oculus', 'Seven', 'Black Panther', 'Harry Potter', 'Imitation of Life', 
+'Snatch', 'Fast and Furious'];
 
+// 1. Console log: the index of Titanic
+
+console.log(favMovies.indexOf('Titanic'));  // .indexOf() returns the number of the element in the array, favMovies
+                                            // Result: 8
+
+// Do the following and console.log the final results (I have included some thought questions, 
+// you don't have to write out an answer for those marked as such):
+// Note: if you have to add to the array, feel free to add any movie you'd like
+
+// 2. use the .sort method 
+
+const favMoviesSorted = favMovies.sort();  //create a new constant for the sorted array to prevent permanent
+                                          // changes to the original array 
+// console.log(favMoviesSorted);      // verified code
+
+//  --- Thought question: what did this do to the array? Did it permanently alter it?
+// The .sort() method sorts the array into alphabetical or numerical order. Yes, it permanantly changes it,
+// unless you create a new constant that can be sorted in place of the original array.
+
+
+// 3. Use the .pop method
+
+favMoviesSorted.pop();   // the .pop method removes the last object in the array (Volver)
+                        // every movie in our favMoviesSorted array is there except Volver.
+//  console.log(favMoviesSorted);        //verified code; sorted alaphabetically 
+
+
+// 4. push "Guardians of the Galaxy"
+
+favMoviesSorted.push("Guardians of the Galaxy");   // pushes "Gardians of the Galaxy" into the last index position
+                                        // of this array
+//  console.log(favMoviesSorted);   //verified code; "Guardians of the Galaxy" at end of array
+
+
+// 5. Reverse the array
+
+favMoviesSorted.reverse();      // Reverses the elements in the favMoviesSorted array.
+console.log(favMoviesSorted);     //verified code; "Guardians of the Galaxy" = index0; Black Panther = index19
+
+
+
+// 6. Use the .shift method to remove "Fast and Furious"
+
+// .shift removes the 1st index,(0), of an array.  Since "Fast and Furious" is not in the 1st position, use .splice.
+            // array.splice(index position desired, howmany removed, item1, ....., itemX)
+            // array.splice (index = position in the array of addition, # added or removed, item(s)+ or -)
+
+            // console.log(favMoviesSorted[14]);  // verified position of Fast and Furious in array
+ favMoviesSorted.splice(14, 1);  // spiced (the index, # to be removed); no additions so last part blank
+// console.log(favMoviesSorted);   // verifiying Fast & Furious removed
+
+
+
+// 7. Use the .unshift - what does it return?
+
+favMoviesSorted.unshift();   // returns the same thing as code above
+// console.log(favMoviesSorted);  // verified code works
+
+
+// 8. .splice "Django Unchained" and add "Avatar" (try finding the index of "Django Unchained", instead of 
+// counting it yourself) 
+
+// console.log(favMovies.indexOf("Django Unchained"));  //determines index of Django Unchained; [14]
+                                             //  Removes elements from an array and, if necessary, inserts new 
+favMoviesSorted.splice(14, 1, "Avatar");     // elements in their place, returning the deleted elements.
+// console.log(favMoviesSorted);           // verified code works
+
+
+// -----Thought question: did this permanently alter our array?
+// Yes.
+
+
+// 9. .slice the last half of the array (challenge yourself and try to programmatically determine 
+//the middle of the array rather than counting it and hard coding it) 
+//console.log(Math.ceil(favMoviesSorted.length/2)); // find the midpoint using Math.ceil and length commands
+                        // Verified = 9  [17 values long; 17/2 = 8.5 rounded up = 9]
+
+favMoviesSorted.slice(9, 17);  // array.slice(start, end).  .slice()returns a section of an array.
+// console.log(favMoviesSorted.slice(9, 17)); //   tests the code. Results: last part of the array in terminal.
+
+// ---- Thought question: did this permanently alter our array?
+// No. 
+
+
+// 10. store the value of your slice in a variable, console.log it 
+// - Thought question: what is going on here?  Storing my sliced array as a variable and consoling it
+
+let f = favMoviesSorted.slice(9, 17);
+// console.log(f);   //verifies code works
+
+
+// 11. console.log your final results
+console.log(f);     //  'Imitation of Life', "Howl's Moving Castle", 'Harry Potter','Harry Potter',
+                    // 'Fried Green Tomatoes', 'Avatar', 'Conan the Barbarian', 'Cloud Atlas'
+
+console.log(favMoviesSorted);  // the original array is unaltered
 
 
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
 
-// console.log('--')   //separates results of each activity in terminal
+
+
+//  console.log('--')   //separates results of each activity in terminal
 
 
 
@@ -169,6 +273,8 @@ for (let ninja of ninjaTurtles){        // A for loop that lets each ninja name 
 ////////////////////////////////
 
 // console.log('--')   //separates results of each activity in terminal
+
+
 
 
 
