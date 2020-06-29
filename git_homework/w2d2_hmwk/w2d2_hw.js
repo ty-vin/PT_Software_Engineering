@@ -349,9 +349,9 @@ nums.sort();    // sorts the array to prepare for the median
   let nums2 = (nums.sort());    // lets a variable represent the sorted array in ascending order
 // console.log(nums2);         // verifies the code
 
-  // let nums2Sorted = (Math.ceil(nums2.length));  // assigns a variable to represent total elements of sorted array
- //  console.log(nums2Sorted);                    // verifies code
-console.log(nums2[13]);                           // console logs the middle value for this 25 element array
-                                                //* not ideal for larger code, but need help with more complex
-                                                // code examples
+let nums2Sorted = (Math.ceil(nums2.length/2));  // assigns a variable to represent total elements of sorted array
+console.log(nums2Sorted);                    // verifies code; Result: 13
+console.log(nums2[13]);                     // console logs the middle value for this 25 element array, 
+                                                // element 13
+                                                
 
