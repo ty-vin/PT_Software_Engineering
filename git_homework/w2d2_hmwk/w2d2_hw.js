@@ -102,7 +102,7 @@ console.log(plantee); // results: [ 'Plantee', 'plant', 5001, 'Mordor' ]
 
 const wolfy = ["Wolfy", "wolf", 16, "Yukon Territory"]
 wolfy.pop("Yukon Territory");   // remove index3 (hometown) "Yukon Territory"
-wolfy.push("Gotham City");      // replace index3 with "Gothem City"
+wolfy.push("Gotham City");      // replace index3 with "Gotham City"
 console.log(wolfy);             // results: [ 'Wolfy', 'wolf', 16, 'Gotham City' ]
 
 
@@ -263,6 +263,8 @@ console.log(favMoviesSorted);  // the original array is unaltered
 // Where is Waldo
 ////////////////////////////////
 
+/*
+
 console.log('--')   //separates results of each activity in terminal
 
 // With the following multi-dimensional array
@@ -288,7 +290,7 @@ whereIsWaldo [1][2] = "No One";  //replace Neff from array 1 index 2 and replace
 console.log(whereIsWaldo[2][1][1]);     //finding Waldo in array position 2, -> 1 -> 1; [2[0,1]]
                                         // Results: Waldo
 
-
+*/
 
 ////////////////////////////////
 //  Excited Kitten
@@ -304,6 +306,7 @@ For every even number in your loop, log "...human...why you taking pictures of m
 
 */
 
+/*
 
 // console.log('--')   //separates results of each activity in terminal
 const kittyTalk = [" ...human...why you taking pictures of me?... ", " ...the catnip made me do it... ", 
@@ -320,7 +323,7 @@ console.log(kittyTalk[Math.round(2 * Math.random())]);   // round the random num
 
 }
 
-
+*/
 
 
 ////////////////////////////////
@@ -330,16 +333,25 @@ console.log(kittyTalk[Math.round(2 * Math.random())]);   // round the random num
 
 /*
 Find the median number in the following nums array, then console.log that number.
-hint if you check the length of the array / 2, you might get not get a whole number. In which case, look into Math.floor( // something )
+hint if you check the length of the array / 2, you might get not get a whole number. 
+In which case, look into Math.floor( // something )
 const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
 
 Expected output: => 15
 */
 
-// console.log('--')   //separates results of each activity in terminal
+console.log('--')   //separates results of each activity in terminal
 
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+nums.sort();    // sorts the array to prepare for the median
+// console.log(nums.length);   // gives length of the array = 25
 
+  let nums2 = (nums.sort());    // lets a variable represent the sorted array in ascending order
+// console.log(nums2);         // verifies the code
 
-
-
+  // let nums2Sorted = (Math.ceil(nums2.length));  // assigns a variable to represent total elements of sorted array
+ //  console.log(nums2Sorted);                    // verifies code
+console.log(nums2[13]);                           // console logs the middle value for this 25 element array
+                                                //* not ideal for larger code, but need help with more complex
+                                                // code examples
 
