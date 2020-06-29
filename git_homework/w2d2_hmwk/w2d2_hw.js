@@ -146,6 +146,8 @@ for (let ninja of ninjaTurtles){        // A for loop that lets each ninja name 
 
 */
 
+/*
+
 ////////////////////////////////
 // Methods, Revisited
 ////////////////////////////////
@@ -255,16 +257,36 @@ console.log(f);     //  'Imitation of Life', "Howl's Moving Castle", 'Harry Pott
 
 console.log(favMoviesSorted);  // the original array is unaltered
 
+*/
 
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
 
+console.log('--')   //separates results of each activity in terminal
 
+// With the following multi-dimensional array
 
-//  console.log('--')   //separates results of each activity in terminal
+const whereIsWaldo = [["Timmy", "Frank"], "Eggbert",
+                    ["Lucinda", "Jacc", "Neff", "Snoop"],
+                    ["Petunia", ["Baked Goods", "Waldo"]]];
 
+// Remove Eggbert (hint look at the slice/splice method(s))
 
+// console.log(whereIsWaldo[1]); //check the position of Eggbert
+
+//let whereIsWaldoSp = 
+whereIsWaldo.splice(1, 1,);     // spliced Eggbert out and replaced it with an empty space
+// console.log(whereIsWaldo);      // verified code works
+
+// Change "Neff" to "No One"
+
+whereIsWaldo [1][2] = "No One";  //replace Neff from array 1 index 2 and replaced it with No One.
+// console.log(whereIsWaldo);          // verified code 
+
+// Access and console.log "Waldo"
+console.log(whereIsWaldo[2][1][1]);     //finding Waldo in position 2, -> 1 -> 1
+                                        // Results: Waldo
 
 
 
@@ -272,16 +294,29 @@ console.log(favMoviesSorted);  // the original array is unaltered
 //  Excited Kitten
 ////////////////////////////////
 
-// console.log('--')   //separates results of each activity in terminal
+/*
 
+Write code that logs "Love me, pet me! HSSSSSS!" 20 times.
 
+For every even number in your loop, log "...human...why you taking pictures of me?...", 
+"...the catnip made me do it...", or 
+"...why does the red dot always get away..." at random.
 
-
+*/
 
 
 ////////////////////////////////
 //  Find the Median
 ////////////////////////////////
+
+
+/*
+Find the median number in the following nums array, then console.log that number.
+hint if you check the length of the array / 2, you might get not get a whole number. In which case, look into Math.floor( // something )
+const nums = [14,11,16,15,13,16,15,17,19,11,12,14,19,11,15,17,11,18,12,17,12,71,18,15,12];
+
+Expected output: => 15
+*/
 
 // console.log('--')   //separates results of each activity in terminal
 
