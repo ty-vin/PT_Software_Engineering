@@ -285,7 +285,7 @@ whereIsWaldo [1][2] = "No One";  //replace Neff from array 1 index 2 and replace
 // console.log(whereIsWaldo);          // verified code 
 
 // Access and console.log "Waldo"
-console.log(whereIsWaldo[2][1][1]);     //finding Waldo in position 2, -> 1 -> 1
+console.log(whereIsWaldo[2][1][1]);     //finding Waldo in array position 2, -> 1 -> 1; [2[0,1]]
                                         // Results: Waldo
 
 
@@ -303,6 +303,24 @@ For every even number in your loop, log "...human...why you taking pictures of m
 "...why does the red dot always get away..." at random.
 
 */
+
+
+// console.log('--')   //separates results of each activity in terminal
+const kittyTalk = [" ...human...why you taking pictures of me?... ", " ...the catnip made me do it... ", 
+" ...why does the red dot always get away..."];
+
+for(let i = 1; i <= 20; i++){   // interate for 20
+
+if(i % 2 === 0){        // if even console log string below
+ //console.log(" Love me, pet me! HSSSSSS! ");
+console.log(kittyTalk[Math.round(2 * Math.random())]);   // round the random number (only 0-1) up to 2nd array position
+   }else {                                               // to generate a random message or 
+       console.log (" Love me, pet me! HSSSSSS! " );    // console log HSS... string
+   }
+
+}
+
+
 
 
 ////////////////////////////////
