@@ -1,7 +1,7 @@
 //Ty V. 
 //Part II: JavaScript Reps
 
-/*
+
 
 ////////////////////////////////
 // Easy Going
@@ -59,9 +59,9 @@ for (let i = 1; i <= 100; i++) {  // Interates the code to increase number by on
     console.log(answer);      // Logs the answer of the if interation in terminal 
 }
 
-*/
 
-/*
+
+
 
 ////////////////////////////////
 // Wild Wild Life
@@ -120,9 +120,9 @@ console.log(dart);      // Results: [ "D'Art", 'Demogorgan Dog', 2, 'Upside Down
 wolfy[0] = "Gameboy";
 console.log(wolfy);
 
-*/
 
-/*
+
+
 
 ////////////////////////////////
 // Yell at the Ninja Turtles
@@ -144,9 +144,9 @@ for (let ninja of ninjaTurtles){        // A for loop that lets each ninja name 
                                         //          RAPHAEL
                                         //          MICHAELANGELO
 
-*/
 
-/*
+
+
 
 ////////////////////////////////
 // Methods, Revisited
@@ -257,13 +257,13 @@ console.log(f);     //  'Imitation of Life', "Howl's Moving Castle", 'Harry Pott
 
 console.log(favMoviesSorted);  // the original array is unaltered
 
-*/
+
 
 ////////////////////////////////
 // Where is Waldo
 ////////////////////////////////
 
-/*
+
 
 console.log('--')   //separates results of each activity in terminal
 
@@ -290,7 +290,7 @@ whereIsWaldo [1][2] = "No One";  //replace Neff from array 1 index 2 and replace
 console.log(whereIsWaldo[2][1][1]);     //finding Waldo in array position 2, -> 1 -> 1; [2[0,1]]
                                         // Results: Waldo
 
-*/
+
 
 ////////////////////////////////
 //  Excited Kitten
@@ -306,7 +306,7 @@ For every even number in your loop, log "...human...why you taking pictures of m
 
 */
 
-/*
+
 
 // console.log('--')   //separates results of each activity in terminal
 const kittyTalk = [" ...human...why you taking pictures of me?... ", " ...the catnip made me do it... ", 
@@ -323,7 +323,7 @@ console.log(kittyTalk[Math.round(2 * Math.random())]);   // round the random num
 
 }
 
-*/
+
 
 
 ////////////////////////////////
