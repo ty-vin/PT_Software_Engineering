@@ -1,5 +1,8 @@
 //
 /*
+
+/////  Datatypes Refresher  /////
+
 Answer the Following
 For each of the following, write which datatypes you would use to represent the data, and then give a
 small example of the data structure. [ Strings - Numbers - Booleans - Arrays - Objects ]
@@ -49,4 +52,43 @@ e.g. A computer that can be either on or off.
     
 
 */
+
+
+
+/////  Take it Easy  /////
+
+// 1) Make an array that holds all of the colors of the rainbow.
+
+const rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indego', 'violet'];
+
+
+// 2) Write code that will access "blue" from the rainbow array.
+
+console.log(rainbowColors[4]);
+
+
+
+// 3) Make an object that is called your name and holds the information about your favorite food, a hobby, 
+// the name of the town that you live in currently, and your favorite datatype.
+
+const tV = {
+    name: 'Ty',
+    favFood: 'berries',
+    hobby: 'reading',
+    currrentloc: 'school',
+    favDatatype: 'Boolean'
+};
+
+
+
+// 4) Write code that will access your hobby from the object that you just created.
+
+console.log(tV.hobby);
+
+// 5) Commit message: "took it easy"
+
+
+
+
+
 
