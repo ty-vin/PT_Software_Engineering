@@ -121,7 +121,7 @@ const crazyObject = {
   }
 }
 
-
+/*
 // Use crazy Object to log the following.
 
 
@@ -150,6 +150,8 @@ console.log(crazyObject.larry.characters[1].name);  // logs crazyObject array el
 crazyObject.larry.quotes.push (" I'm trying to elevate small talk to medium talk "); // pushes the quote into the last place in the larry-quotes array
 console.log(crazyObject.larry.quotes);  //logs the push
 
+*/
+
 /*
 confirmation:
 
@@ -162,6 +164,7 @@ confirmation:
 */
 
 // Commit Message: "crazy object complete"
+
 
 
 
@@ -186,21 +189,23 @@ const inception = {
     }
  }
 
+/*
 
 // Change the value of limbo to null.  
-inception.reality.limbo = 'null'; // accessing the 'limbo' value in the nested 'reality' object defined by 'inception', the nested object 
-                                 //  to change the value of limbo to 'null' 
+inception.reality.limbo = 'null';       // accessing the 'limbo' value in the nested 'reality' object defined by 'inception', the nested object 
+                                        //  to change the value of limbo to 'null' 
 console.log(inception.reality.limbo);  // logs the value of limbo  // null
 
-// console.log(inception);                 // other check: { reality: { dreamLayer1: { dreamLayer2: [Object] }, limbo: 'null' } }
-
+// console.log(inception);            // other check: { reality: { dreamLayer1: { dreamLayer2: [Object] }, limbo: 'null' } }
 
 // Commit your work!
 //Your commit message should read something like: "objectception complete" 
 
+*/
 
 
 
+/////   Bond Films: Array of objects:  /////
 
 
 
@@ -235,14 +240,98 @@ const bondFilms = [
 
   //  1) Create a new array called bondTitles with only the titles of the Bond films, and console.log the new array.
   
+/*
 
+  let bondTitles = [];                      // new array for bond films
+  for (i = 0; i < bondFilms.length; i++) {  // iteration over the array length
+    bondTitles[i] = bondFilms[i].title;     // for each iteration of bondFilms, select 'titles' from the array and assign them to bondTitles
+  }
+    console.log (bondTitles);               // log the new array for bondTitles
+
+*/
+
+// log results
+/*[
+  'Skyfall',
+  'Thunderball',
+  'Goldfinger',
+  'Live and Let Die',
+  'You Only Live Twice',
+  'The Spy Who Loved Me',
+  'Casino Royale',
+  'Moonraker',
+  'Diamonds Are Forever',
+  'Quantum of Solace',
+  'From Russia with Love',
+  'Die Another Day',
+  'Goldeneye',
+  "On Her Majesty's Secret Service",
+  'The World is Not Enough',
+  'For Your Eyes Only',
+  'Tomorrow Never Dies',
+  'The Man with the Golden Gun',
+  'Dr. No',
+  'Octopussy',
+  'The Living Daylights',
+  'A View to a Kill',
+  'License to Kill'
+]*/
 
   //  2) Create a new array oddBonds, of only the Bond films released on odd-numbered years.
   
+    let oddBonds = [];                            // new array for odd films
+    let num = 0;                                  // oddBonds iteration variable
+      for (j = 0; j < bondFilms.length; j++) {    // for statement that uses 'j' to iterate over the length of the bondFilm array 
+        if (bondFilms[j].year % 2 !== 0) {        // if statement that modulates for odd number bond film years
+            oddBonds[num] = bondFilms[j].year;    //  when the year is odd, save the value into the oddBonds array
+            num++;                                //  'num' assigned to iterate over the new oddBonds array to capture only odd year elements
+             } 
+        }
+        console.log(oddBonds);                      // logs odd movie years (if using title instead of year, will log odd year titles)
 
+// log of odd year films 
+        /*
+oddBonds[num] = bondFilms[j].year;   // results for odd years
+  [
+  1965, 1973, 1967, 1977,
+  1979, 1971, 1963, 1995,
+  1969, 1999, 1981, 1997,
+  1983, 1987, 1985, 1989
+]
 
-  //  3) Determine the total cumulative gross of the Bond franchise, and console.log the result. hint To make the grosses into usable numbers, look into the .replace Javascript method (there are many ways to do this, however). Look into parseInt also.
+oddBonds[num] = bondFilms[j].title;   //  results for titles of movies for odd year
+[
+  'Thunderball',
+  'Live and Let Die',
+  'You Only Live Twice',
+  'The Spy Who Loved Me',
+  'Moonraker',
+  'Diamonds Are Forever',
+  'From Russia with Love',
+  'Goldeneye',
+  "On Her Majesty's Secret Service",
+  'The World is Not Enough',
+  'For Your Eyes Only',
+  'Tomorrow Never Dies',
+  'Octopussy',
+  'The Living Daylights',
+  'A View to a Kill',
+  'License to Kill'
+]
+
+*/
+
+  //  3) Determine the total cumulative gross of the Bond franchise, and console.log the result. 
+  //  hint To make the grosses into usable numbers, look into the .replace Javascript method (there are many ways to do this, however). 
+  //  Look into parseInt also.
   
+  let bondGross = 0;
+  for (k = 0; k < bondFilms.length; k++) {
+    bondFilms[k].gross = bondFilms[k].gross.replace("$", ""); //only 1 $ so we don't need /$/g
+    bondFilms[k].gross = bondFilms[k].gross.replace(/,/g, ""); // replace: /character/g replaces all instances of that character
+    bondGross += parseInt(bondFilms[k].gross);
+  }
+console.log("$ " + bondGross);
 
   // Commit your work!
   //Your commit message should read something like: "completed bond challenges"
