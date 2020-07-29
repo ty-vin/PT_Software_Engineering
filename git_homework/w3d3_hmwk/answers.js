@@ -331,7 +331,7 @@ oddBonds[num] = bondFilms[j].title;   //  results for titles of movies for odd y
     bondFilms[k].gross = bondFilms[k].gross.replace(/,/g, ""); // replace: /character/g replaces all instances of that character
     bondGross += parseInt(bondFilms[k].gross);
   }
-console.log("$ " + bondGross);
+console.log("$" + bondGross);  //  logs total $13821621224
 
   // Commit your work!
   //Your commit message should read something like: "completed bond challenges"
