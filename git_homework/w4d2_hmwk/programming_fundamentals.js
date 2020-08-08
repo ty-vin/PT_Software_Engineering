@@ -66,7 +66,7 @@ const f = l => {                      // f is equal to the l parameter, which is
     return evenSum;                 // return or log the value stored in evenSum
   } 
   
-console.log(f2(55);                //55 log the call to f2 function to compile for value 
+console.log(f2(55));                //55 log the call to f2 function to compile for value 
 
 
 
