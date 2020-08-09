@@ -37,13 +37,13 @@ console.log(bottle.cap.color1); // logs the propery 'color1' inside the object '
 //  have a name and a price. Log one of the properties of that inner object.
 
 
-const receipt = [                           // receipt array with three inner objects " WallyWorld", "Maejor Store" & "Speedywayz"
-    {name: "WallyWorld", total: 75.21}
-    {name: "Maejor Store",total: 107.55} 
+const receipts = [                           // receipt array with three inner objects " WallyWorld", "Maejor Store" & "Speedywayz"
+    {name: "WallyWorld", total: 75.21},
+    {name: "Maejor Store", total: 107.55}, 
     {name: "Speedywayz", total: 25.00}
    ]
  
- console.log(receipt[0].name);              //logs the name of the 0 object of array, "WallyWorld"
+ console.log(receipts[0].name);              //logs the name of the 0 object of array, "WallyWorld"
 
 
 
@@ -59,12 +59,7 @@ console.log(apartmentBuilding[1][2]);      // logs the [1] inner array (tenants)
                                             // w/n the apartmentBuilding array 
 
 
-
-
 // Commit: "Combine objects, arrays, and functions"
-
-
-
 
 
 
@@ -74,10 +69,22 @@ console.log(apartmentBuilding[1][2]);      // logs the [1] inner array (tenants)
 
  // ~~~~~   Combine objects, arrays, and functions more than one level deep  ~~~~~~
 
-// 1) Create a function knit that returns an object that has the following kinds of properties 
-// item: scarf, size : 6ft etc. Log a value of that object 
-// (hint: call the function and then call a property on the return value).
+// 1) Create a function 'knit' that returns an object that has the following kinds of properties 
+// item: scarf, size : 6ft etc. 
+// Log a value of that object (hint: call the function and then call a property on the return value).
 
+function knit (item, style, blend, size) {       // knit function with parameters (item, style, blend, size)
+    this.item = item;                           // "this." method with parameters (item, style, blend, size), from the knit function
+    this.style = style;
+    this.blend = blend;
+    this.size = size;
+}
+
+const discountRack = new knit('scarf', 'infinity', 'angora', 'one size'); //  a 'new knit' function constructor contains the arguments 
+                                                                          // passed to and received by the 'knit' function
+    // "A constructor invocation creates a 'new' object. The new object inherits the properties and methods from its constructor." 
+                                                                            
+console.log(discountRack.style);                                        // log the new 'style' object from the discountRack function 
 
 
 // 2) Create a function crayonSelector that returns an object that has an array (you can reuse your crayonBox object). 
