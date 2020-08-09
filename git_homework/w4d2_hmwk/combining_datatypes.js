@@ -12,7 +12,7 @@
 // The array should have the names of some crayons. Log one of the elements of that array.
 
 
-const crayonBox = {  // crayonBox object that holds the crayon array
+const crayonBox = {                                       // crayonBox object that holds the crayon array
     crayons: ['brown', 'black', 'tan', 'yellow', 'cream'] // crayon array with natural crayon colors chosen
 }
 console.log(crayonBox.crayons[0]); // logs the 0 position element of the crayons array, within the crayonBox object. 
@@ -90,12 +90,33 @@ console.log(discountRack.style);                                        // log t
 // 2) Create a function crayonSelector that returns an object that has an array (you can reuse your crayonBox object). 
 // Log one of the elements of that array.
 
+function crayonSelector (size, color) {             // function crayonSelector that will return objects 'size' & 'color' 
+    this.size = ['jumbo', 'standard', 'miniture'];  // size array, referred to by 'this' keyword
+    this.color = ['brown', 'black', 'tan', 'yellow', 'cream'];  // color array, referred to by 'this' keyword
+}
+const selectedCrayon = new crayonSelector ( ); // sets a new variable selectedCrayon equal to the contructor function crayonSelector
+console.log(selectedCrayon.size[0]);            // logs the 0 element of the 'size' object array as a result of the call to the 
+                                                // crayonSelector function; selectedCrayon
 
+                                                
 
 
 // 3) Create a function powerButton that returns a function called options - 
 // options should console.log a simple message like select a song. 
 // Call that inner function
+
+
+
+const options = () => {                 // options function that points/directs a call to return the string
+    return ('Please select a song.');
+  }
+  
+  const powerButton = () => {       // powerButton function that points /directs a call to return the options function
+    return options()                
+  }
+  
+  console.log(powerButton());       // logs the object of the powerButton, which is the object function, which points to the string
+
 
 
 
@@ -128,15 +149,31 @@ Be able to call vendingMachine.vend() with a valid integer to return a snack
 
 // ~~~~~~~~~~      Callbacks        ~~~~~~~~~~ 
 
-Make a function add that takes two arguments (numbers) and sums them together
-Make a function subtract that takes two arguments (numbers) and subtracts them
-Make a function multiply that takes two arguments and multiplies them
-Make a function divide that takes two arguments and divides them
-Make a function calculate that takes three arguments. Assume the two arguments are a number ie num1, num2 and a function called operates (a callback).
-Make it so that when calculate is invoked, the callback "operates" on the numbers and returns the value.
-Call calculate 4 times, each time using one of the operation functions you wrote
-Function definition placement
-Clean up this code, so that it works and has function definitions in the correct place
+// 1) Make a function add that takes two arguments (numbers) and sums them together
+
+
+// 2) Make a function subtract that takes two arguments (numbers) and subtracts them
+
+
+// 3)  Make a function multiply that takes two arguments and multiplies them
+
+
+// 4)  Make a function divide that takes two arguments and divides them
+
+
+// 5) Make a function calculate that takes three arguments. Assume the two arguments are a number ie num1, num2 and a function called operates (a callback).
+
+
+// 6) Make it so that when calculate is invoked, the callback "operates" on the numbers and returns the value.
+
+
+// 7) Call calculate 4 times, each time using one of the operation functions you wrote
+
+
+// 8) Function definition placement
+
+
+//9) Clean up this code, so that it works and has function definitions in the correct place
 
 bar();
 const bar = () => {
