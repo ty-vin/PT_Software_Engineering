@@ -117,10 +117,6 @@ const options = () => {                 // options function that points/directs 
   
   console.log(powerButton());       // logs the object of the powerButton, which is the object function, which points to the string
 
-
-
-
-
 // Commit: "Combine objects, arrays, and functions more than one level deep"
 
 
@@ -130,18 +126,43 @@ const options = () => {                 // options function that points/directs 
 /*
  // ~~~~~~  Model a Vending Machine Model a vending machine  ~~~~~
 
-a vending machine is an object
-it has an array of snacks (make 3 snacks)
-snacks are objects that have a name and a price
-a vending machine has a function vend that allows user to enter the array position (a number) of the snack and then that snack will be returned
-Be able to call vendingMachine.vend() with a valid integer to return a snack
+- a vending machine is an object
+- it has an array of snacks (make 3 snacks)
+- snacks are objects that have a name and a price
+- a vending machine has a function vend that allows user to enter the array position (a number) of the snack 
+-   and then that snack will be returned
+- Be able to call vendingMachine.vend() with a valid integer to return a snack
 
 */
 
 
 
+const vendingMachine = [        // the vendingMachine object with an array of 3 snacks
+    {                           // 3 snacks in the vending machine
+        name: 'Mamba', 
+        price: 1.50
+    },       
+    
+    {
+        name: 'BBQ Baked Lays', 
+        price: 0.75
+    },
 
-/*
+    {
+        name: 'Twix', 
+        price: 1.00
+    },
+]
+
+vendingMachine.vend = () => {
+    for (i = 0; i < vendingMachine.length; i++) {   // itenerate over the length of the vending machine array
+        snack = vendingMachine[i].name              // sets variable 'snack' to vendingMachine
+    };
+console.log(`You've selected: ` + snack + ' Enjoy!');   // logs the chosen snack (Twix)
+    }
+
+vendingMachine.vend(2)  // vending machine with the vend function that allows a user to enter the array position for a snack
+ 
 
 
 
@@ -149,31 +170,102 @@ Be able to call vendingMachine.vend() with a valid integer to return a snack
 
 // ~~~~~~~~~~      Callbacks        ~~~~~~~~~~ 
 
-// 1) Make a function add that takes two arguments (numbers) and sums them together
+// 1) Make a function 'add' that takes two arguments (numbers) and sums them together
+
+const add = (x, y) => {     // add function that has the arguments x and y
+    return (x + y)          // the function returns the sum of the two arguments x & y as x+y
+}
+
+add(1, 2)                   // call to the add function for the numbers 1 and 2. 
+
+// let p = add(1, 2) 
+// console.log (p);               // The return value is 3
+
+// 2) Make a function 'subtract' that takes two arguments (numbers) and subtracts them
+
+const subtract = (c, d) => {      // subtract function that has the arguments c and d
+    return (c - d)                // the function returns the difference of the two arguments as c - d
+}
+
+subtract(2, 1)                     // call to the subtract function for the numbers 2 and 1. 
+
+// p = subtract(2, 1) 
+// console.log (p);                        // The return value is 1
 
 
-// 2) Make a function subtract that takes two arguments (numbers) and subtracts them
+
+// 3)  Make a function 'multiply' that takes two arguments and multiplies them
+
+const multiply = (e, f) => {        // multiply function that has the arguments e and f
+    return (e * f)                  // the function returns the product of the two arguments as e * f
+}
+
+multiply(5, 5)                     // call to the multiply function for the numbers 5 * 5. 
+
+//p = multiply(5, 5) 
+// console.log (p);                        // The return value is 25
 
 
-// 3)  Make a function multiply that takes two arguments and multiplies them
+// 4)  Make a function 'divide' that takes two arguments and divides them
 
+const divide = (g, h) => {           // divide function that has the arguments g and h
+    return (g / h)                  // the function returns the quotient of the two arguments as g / h
+}
 
-// 4)  Make a function divide that takes two arguments and divides them
+divide(7, 7)                   // call to the divide function for the numbers 7 / 7.
 
+// p = divide(7, 7) 
+// console.log (p);                   // The return value is 1
 
-// 5) Make a function calculate that takes three arguments. Assume the two arguments are a number ie num1, num2 and a function called operates (a callback).
+// --- --- --- --- --- --- --- --- --- ---  #'s 5, 6, 7
+/*
+// 5) Make a function 'calculate' that takes three arguments. Assume the two arguments are a number ie 'num1', 'num2' and 
+// a function called 'operates' (a callback).
+
+const calculate = (num1, num2, n) => {      // 'calculate' function that takes three arguments (num1, num2, n)
+
+    console.log(z)                         // logs the value of z
+}
+
+// still working ....
+
 
 
 // 6) Make it so that when calculate is invoked, the callback "operates" on the numbers and returns the value.
 
 
-// 7) Call calculate 4 times, each time using one of the operation functions you wrote
+// still working on this operates function ....
 
 
-// 8) Function definition placement
 
 
-//9) Clean up this code, so that it works and has function definitions in the correct place
+// 7) Call 'calculate' function 4 times, each time using one of the 'operation' functions you wrote
+
+// what I want to calculate in the functions when called 
+
+calculate(0, 1, 2)                  // this call is to multiply the numbers 
+
+calculate(3, 4, 5)                  // this call is to subtract the numbers 
+
+calculate(1, 2, 3)                  // this call is to add the numbers 
+
+calculate(2, 4, 6)                   // this call is to divide the numbers 
+
+*/
+
+
+
+
+//////////////    ///////////////    //////////////    ///////////////    //////////////    ///////////////
+
+//  ~~~~~~~   Function Definition Placement  ~~~~~~~~~~
+
+
+
+
+/*
+
+//  1) Clean up this code, so that it works and has function definitions in the correct place
 
 bar();
 const bar = () => {
@@ -189,9 +281,35 @@ What is meant by the error(s) this produces?
 
 foo();
 
-const foo ()=>{
+const foo () => {
     console.log('hi');
 }
 
 
 */
+
+
+// -----  -----  ----- Code Clean Up  ------  ------  ------
+
+
+
+const bar = () => {                 // declare the function first
+    console.log('bar here');        // log the string
+}
+
+
+const foo = () => {                 // declare the function 
+    console.log('foo here');        // log the string
+}
+
+bar();                              // call the function later, after declaration
+foo();                              // call the function after declaration
+
+
+// Error reading - What is meant by the error(s) this produces? 'foo' is already declared and can't be declared as another function
+
+const foo2 = () => {                  // renamed the 2nd 'foo' as 'foo2' to prevent error
+    console.log('hi');
+}
+
+foo2();                             // call the function after declaration (adjusted function)
