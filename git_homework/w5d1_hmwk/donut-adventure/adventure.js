@@ -41,7 +41,55 @@ Your commit message should read something like: "created our hero dougie"
 
 */
 
+class Hero {
+    constructor(name) {
+        this.name = name,
+        this.health = 100,
+        
+        this.weapons = {
+            sprinkleSpray: 5,
+            sugarShock: 10
+        },
+        this.catchPhrases = [
+            'I\'m fresher than day-old pizza.',
+            'You can\'t count my calories!'
+        ]
+    }
 
+
+    talkSass() {
+        console.log(this.catchPhrases[Math.floor(Math.random() * 1)])
+
+    };
+
+    announceHealth() {
+        console.log(`${this.name}'s current health level is ${this.health}.`)
+    };
+
+
+    fight(nemy) {
+
+        const dougieItems = Object.keys(dougie.weapons);
+        let point = Object.values(dougie.weapons)
+        const ouch = Math.floor(Math.random() * 1)
+        const smack = dougieItems[ouch]
+        const power = point[ouch]
+
+
+        nemy.health -= power
+
+        console.log('I\'m ready to rumble!');
+
+        console.log(`Dougie used ${smack}!`);
+        console.log(`${nemy.name} was hit by ${smack}! His health is now at ${nemy.health}!`);
+
+    }
+
+}
+
+
+const dougie = new Hero('Dougie the Doughnut');
+console.log(dougie);
 
 
 
@@ -87,7 +135,12 @@ Have Dougie talkSass
 Have Pizza Rat talkSmack
 Have Dougie announceHealth
 Have Pizza Rat announceHealth
+*/
 
+
+
+
+/*
 
 ************ Fight! ******************
 Things have escalated between Dougie and Pizza Rat!
