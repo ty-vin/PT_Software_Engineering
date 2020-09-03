@@ -37,7 +37,16 @@ fight: for now, logs 'i\'m ready to rumble'
 Now, using this Hero class, create an instance of our hero Dougie the donut.
 
 ~~~~~~~~~~~ 🔴 Commit your work!
-Your commit message should read something like: "created our hero dougie"
+Your commit message should read something like: "created our hero dougie" 
+
+*/
+
+
+
+
+
+
+/*
 
 ************* Our Enemy ************* 
 Now let's create our Enemy class!
@@ -63,7 +72,14 @@ Now, using this Enemy class, create an instance of the enemy Pizza Rat.
 
 🔴 Commit your work!
 Your commit message should read something like: "created our enemy pizza rat"
+*/
 
+
+
+
+
+
+/*
 *********** Walking Down the Street **************
 Now, let's write their story! Dougie is walking down Flat Iron -- but oh no! He runs into Pizza rat!
 
@@ -90,7 +106,8 @@ Have Pizza Rat and Dougie both announceHealth to make sure their health has decr
 ~~~~~~~~~🔴 Commit your work!
 Your commit message should read something like: "dougie and pizza rat have fought"
 
-
-
-
 */
+
+
+
+
