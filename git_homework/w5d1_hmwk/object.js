@@ -17,8 +17,7 @@ eatFood() - log "nibble nibble"
 getPrice() - return the price
 
 ~~~~~~~~~~~~ 🔴 Commit your work!
-Your commit message should read something like:
-"created hamster class"
+Your commit message should read something like: "created hamster class"
 
 */
 
@@ -100,7 +99,7 @@ class Person {
     }
 
     eat(){                    // eat() - increment weight, increment mood ( if weight is currently 10 it should go up to 11 and same for mood)
-        if(this.weight < 11){
+        if(this.weight < 10){
             this.weight +=1;
             this.mood +=1;
         }
@@ -123,7 +122,7 @@ class Person {
     buyHamster(hamster){                        
         this.hamsters.push(hamster);         // buyHamster(hamster) - push the hamster object onto the hamster array,   
         this.mood +=10;                      // increment mood by 10,
-        this.bankAccount - this.getPrice ()  // decrement bankAccount by the value of the hamster (hint: use getPrice())
+        this.bankAccount - this.getPrice();  // decrement bankAccount by the value of the hamster (hint: use getPrice())
     }
 }
 
@@ -149,10 +148,41 @@ Have Timmy eat twice
 Have Timmy exercise twice
 
 ~~~~~~~~🔴 Commit your work!
-Your commit message should read something like:
-"created timmys story"
+Your commit message should read something like: "created timmys story"
 
 */
 
+
+const timmy = new Person("Timmy");      // Instantiate a new Person named Timmy
+timmy.age = 5;                          // Age Timmy five years
+
+for (i = 0; i < 5; i++) {               // Have him eat five times.
+    timmy.eat(i);
+}
+
+for (i = 0; i < 5; i++) {               // Have him exercise five times.
+    timmy.exercise(i);
+}
+
+for (i = 0; i < 9; i++) {               // Age Timmy 9 years
+    timmy.ageInc(i);
+}
+
+
+const gus = new Hamster('Gus');         // Create a hamster named "Gus"
+gus.owner = 'Timmy';                    // Set Gus's owner to the string "Timmy"
+
+timmy.buyHamster()                      // Have Timmy "buy" Gus
+for (i = 0; i < 15; i ++) {             // Age Timmy 15 years
+    timmy.ageInc();
+}
+
+for (i = 0; i < 2; i ++) {
+    timmy.eat();                        // Have Timmy eat twice
+    timmy.exercise();                   // Have Timmy exercise twice
+}
+
+cconsole.log(timmy);
+console.log(gus);
 
 
