@@ -21,5 +21,16 @@ Add some text inside the h1 element. Example text: 'Hogwarts'
     $h1.text('Hogwarts 5.3');
     $container.append($h1);     // appended $h1 so that text appears on page
     console.log($h1.text);      // console logged 'Hogwarts 5.3'
-});
 
+    let $name = $('<h2>').text('Ty V.');
+    let $house = $('<h3>').text('Gryffindor');
+    let $pet = $('<h4>').text('Smiley');
+    $pet.addClass('owl');
+    
+    let $wand = $('<h4>').text('Crystal Wand');
+    $container.append($h1, $name, $house, $pet, $wand)
+    console.log($pet)
+
+
+  });
+//still working on this
