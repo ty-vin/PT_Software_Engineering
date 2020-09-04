@@ -56,7 +56,6 @@ class Hero {
         ]
     }
 
-
     talkSass() {
         console.log(this.catchPhrases[Math.floor(Math.random() * 1)]);
 
@@ -72,19 +71,16 @@ class Hero {
         const dougieItems = Object.keys(dougie.weapons);
         let point = Object.values(dougie.weapons);
         const ouch = Math.floor(Math.random() * 1);
-        const smack = dougieItems[ouch];
-        const power = point[ouch];
-
+        const smack = dougieItems[ouch]
+        const power = point[ouch]
 
         nemy.health -= power;
 
         console.log('I\'m ready to rumble!');
-
         console.log(`Dougie used ${smack}!`);
         console.log(`${nemy.name} was hit by ${smack}! His health is now at ${nemy.health}!`);
 
     }
-
 }
 
 const dougie = new Hero('Dougie the Doughnut');
