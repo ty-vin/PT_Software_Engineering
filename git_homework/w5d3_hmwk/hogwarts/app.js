@@ -17,7 +17,8 @@ Add some text inside the h1 element. Example text: 'Hogwarts'
     let $container = $('#container')  // id of container and set it to a variable named $container console.log $container.
     console.log($container);
 
-    let $h1 = $('<h1>')     // Create an <h1> element and set it to a variable called $h1 and console log it
+    let $h1 = $('<h1>')         // Create an <h1> element and set it to a variable called $h1 and console log it
     $h1.text('Hogwarts 5.3');
-    console.log($h1);
+    $container.append($h1);   // appended $h1 so that text appears on page
+    console.log($h1.text);    // console logged 'Hogwarts 5.3'
 });
