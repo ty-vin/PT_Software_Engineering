@@ -58,25 +58,25 @@ class Hero {
 
 
     talkSass() {
-        console.log(this.catchPhrases[Math.floor(Math.random() * 1)])
+        console.log(this.catchPhrases[Math.floor(Math.random() * 1)]);
 
-    };
+    }
 
     announceHealth() {
-        console.log(`${this.name}'s current health level is ${this.health}.`)
-    };
+        console.log(`${this.name}'s current health level is ${this.health}.`);
+    }
 
 
     fight(nemy) {
 
         const dougieItems = Object.keys(dougie.weapons);
-        let point = Object.values(dougie.weapons)
-        const ouch = Math.floor(Math.random() * 1)
-        const smack = dougieItems[ouch]
-        const power = point[ouch]
+        let point = Object.values(dougie.weapons);
+        const ouch = Math.floor(Math.random() * 1);
+        const smack = dougieItems[ouch];
+        const power = point[ouch];
 
 
-        nemy.health -= power
+        nemy.health -= power;
 
         console.log('I\'m ready to rumble!');
 
@@ -86,7 +86,6 @@ class Hero {
     }
 
 }
-
 
 const dougie = new Hero('Dougie the Doughnut');
 console.log(dougie);
@@ -124,7 +123,39 @@ Your commit message should read something like: "created our enemy pizza rat"
 
 
 
-
+class Enemy {
+    constructor(name) {
+        this.name = name,
+        this.health = 100,
+        this.weapons = {
+            pepperoniStars: 5,
+            cheeseGrease: 10
+        },
+        this.catchPhrases = [
+            'I\'m YouTube famous!', 'I\'m more dangerous than an uncovered sewer.'
+        ]
+    }
+    talkSmack() {
+        console.log(this.catchPhrases[Math.floor(Math.random() * 1)]);
+    }
+    announceHealth() {
+        console.log(`${this.name}'s current health level is ${this.health}.`);
+    }
+    fight(nemy) {
+        const ratItems = Object.keys(pizzaRat.weapons);
+        let point = Object.values(pizzaRat.weapons);
+        const ouch = Math.floor(Math.random() * 1);
+        const smack = ratItems[ouch];
+        const power = point[ouch];
+        nemy.health -= power;
+        console.log('I\'m gonna flatten you like a slice of pepperoni!');
+        console.log(`Pizza Rat used ${smack}!`);
+        console.log(`${nemy.name} was hit by ${smack}! His health is now at ${nemy.health}!`);
+        
+    }
+}
+const pizzaRat = new Nemy('Pizza Rat');
+console.log(pizzaRat);
 
 
 /*
@@ -138,7 +169,10 @@ Have Pizza Rat announceHealth
 */
 
 
-
+dougie.talkSass();              // Have Dougie talkSass
+pizzaRat.talkSmack();           // Have Pizza Rat talkSmack
+dougie.announceHealth();        // Have Dougie announceHealth
+pizzaRat.announceHealth();      // Have Pizza Rat announceHealth
 
 /*
 
@@ -162,5 +196,7 @@ Your commit message should read something like: "dougie and pizza rat have fough
 */
 
 
-
-
+pizzaRat.fight(dougie);         // Have Pizza Rat fight Dougie
+dougie.fight(pizzaRat);         // Have Dougie fight Pizza Rat
+dougie.announceHealth();        // Have Dougie announceHealth
+pizzaRat.announceHealth();      // Have Pizza Rat announceHealth
