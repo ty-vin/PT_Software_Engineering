@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+.card 
+div.card-header {
+  font-size: large;
+ 
+ }
+ 
+ div.card {
+   margin-top: 50px;
+   margin-left: 50px;
+   margin-right: 50px;
+   height: 700px;
+   
+ }
+ 
+ .table {
+   margin-top: 20px;
+   color: aliceblue;
+ }
+ 
+ html, body {
+   background-color: rgba(225, 220, 220, 0.509);
+   background-position: center;
+   background-size: 190%;
+   
+   
+ } 
+ .card {
+   background-color: rgba(157, 153, 153, 0.678);
+   color: rgb(220, 214, 214);
+ }
+ 
+ .text-center {
+   margin-top: 600px;
+   margin-left: 1100px;
+ }

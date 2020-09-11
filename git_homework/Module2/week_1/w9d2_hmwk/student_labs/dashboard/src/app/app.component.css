@@ -1,0 +1,28 @@
+/*
+
+.sidebar {
+    height: 100%; 
+    width: 180px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #111;
+    color: white;
+    overflow-x: hidden;
+    padding-top: 30px;
+    padding-left: 10px;
+  }
+
+  .grid {
+      display: grid;
+      margin-left: 180px;
+  }
+
+  
+
+  .row {
+      height: 50%;
+  }
+
+  */

@@ -1,0 +1,22 @@
+.card {
+    background-color: rgba(182, 190, 191, 0.233);
+       position: absolute;
+       margin-top: -10px; 
+}
+
+li {
+ list-style-type: none;
+}
+
+ul{
+    margin-top: 140px;
+}
+
+h3{
+    margin: auto;
+}
+
+h4 {
+    margin-left: 30px;
+}
+
