@@ -1,0 +1,28 @@
+
+select * from apartments;
+
+select * from tenants;
+
+select price, floor, bedrooms from apartments;
+
+select * from tenants;
+
+select * from tenants where gender = 'Female';
+
+select name from tenants where gender = 'Male';
+
+select name, address from buildings where id = 2;
+
+select * from tenants where gender = 'Male';
+
+select * from tenants where apartment_id = 8;
+
+SELECT apartments.price, buildings.name, buildings.address
+FROM apartments
+INNER JOIN buildings
+ON apartments.building_id = buildings.id;
+
+select *
+from buildings
+inner join apartments
+on apartments.building_id = buildings.id;
